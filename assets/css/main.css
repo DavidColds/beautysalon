@@ -3,6 +3,7 @@ html {
   font-family: 'Playfair Display';
   background-color: #fafafa;
   scroll-behavior: smooth;
+  margin: 0px;
   
 }
 
@@ -234,7 +235,7 @@ h6 {
 
 
 footer {
-  background-color: #045cb8;
+  background-color: #ffd7e1;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   width: 100%;
   text-align: left;
@@ -376,13 +377,12 @@ textarea {
 
 .list-item {
   line-height: 4;
-  color: #aaa;
 }
 
 .contact-text {
   font: 300 18px 'Lato', sans-serif;
   letter-spacing: 1.9px;
-  color: #bbb;
+  color: rgb(0, 0, 0);
 }
 
 .place {
@@ -398,7 +398,7 @@ textarea {
 }
 
 .contact-text a {
-  color: #bbb;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   transition-duration: 0.2s;
 }
@@ -566,4 +566,35 @@ hr {
   .send-button {
     width: 99%;
   }
+  
+}
+
+
+/**** services  ****/
+
+.services{
+  padding-top: 12%;
+  padding-bottom: 6% ;
+}
+
+/**** end services  ****/
+
+/** parallax **/
+
+.parallax {
+
+  background-image: url("https://images.unsplash.com/photo-1470072508653-1be229b63562?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.12);
+
+}
+.parallax h1 {
+  padding-top: 100px;
+  font-size: 70px;
+}
+.parallax h4 {
+  font-size: 40px;
 }
