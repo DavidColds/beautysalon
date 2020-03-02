@@ -137,6 +137,18 @@ h6 {
 
 /*Bootstrap Carousel Responsive*/
 
+.home-overlay {
+  background-color: rgba(255, 255, 255, 0.3);
+  background-image: url("../images/pattern.png");
+  background-repeat: repeat;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
 .carousel-inner {
   padding-top: 76px;
   height: 100%;
