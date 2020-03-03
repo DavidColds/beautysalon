@@ -4,8 +4,9 @@ html {
   background-color: #fafafa;
   scroll-behavior: smooth;
   margin: 0px;
-  
+
 }
+
 .row {
   display: -ms-flexbox;
   display: flex;
@@ -39,7 +40,6 @@ html {
 
 }
 
-
 p,
 h1,
 h2,
@@ -48,12 +48,6 @@ h4,
 h5,
 h6 {
   color: #fff;
-}
-
-.border1:hover {
-  background: #ffffff;
-  color: #0f0f0f;
-  
 }
 
 
@@ -86,7 +80,7 @@ h6 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all .5s ease-in-out;
   font-size: 25px;
-  
+
 
 }
 
@@ -113,43 +107,25 @@ h6 {
   color: #fff2f5;
   font-weight: 300;
 }
+
 /** end intro-section **/
 
-#sp {
-  background-color: rgb(218, 218, 218);
-  color: #fff;
-  border-radius: 40px;
-  padding: 10px 20px;
-}
-
-#sp:hover {
-  background-color: rgb(233, 233, 233);
-  border: 3px solid #fff;
-  cursor: pointer;
-}
-
-.border1 {
-  width: 100%;
-  border: 3px solid #FFF673;
-  border-radius: 40px;
-  padding: 5px 15px;
-}
 
 
 /*Bootstrap Carousel Responsive*/
 
 
 
-.drk:after{
-content:"";
-display: block;
-position: absolute;
-top:0;
-bottom:0;
-left:0;
-right:0;
-background: #ff99b349;
-opacity: 0.6;
+.drk:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ff99b349;
+  opacity: 0.6;
 
 }
 
@@ -159,12 +135,14 @@ opacity: 0.6;
 
 .carousel-item .active {
   display: block;
-  
+
 }
+
 .carousel-item h1 {
   margin: 0;
   color: white;
 }
+
 .carousel-inner>.carousel-item>img {
   max-height: 1000px;
   object-fit: cover;
@@ -177,8 +155,8 @@ opacity: 0.6;
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
-  
-  
+
+
 }
 
 #carouselExample {
@@ -209,7 +187,7 @@ opacity: 0.6;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  
+
 }
 
 
@@ -230,9 +208,7 @@ opacity: 0.6;
 .column {
   float: left;
   width: 50%;
-  padding: 10px;
-  height: 300px;
-  /* Should be removed. Only for demonstration */
+
 }
 
 /* Clear floats after the columns */
@@ -310,17 +286,19 @@ footer .footer-right a {
 
 /** contact **/
 
-.maps{
+.maps {
   max-width: 100%;
 }
 
 #contact {
   width: 100%;
   height: 50vh;
-  background: #ee9ca7;  
-  background: -webkit-linear-gradient(to bottom, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    overflow: hidden;
+  background: #ee9ca7;
+  background: -webkit-linear-gradient(to bottom, #ffdde1, #ee9ca7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  overflow: hidden;
   padding-bottom: 200px;
   font-family: 'Playfair Display';
 }
@@ -588,15 +566,15 @@ hr {
   .send-button {
     width: 99%;
   }
-  
+
 }
 
 
 /**** services  ****/
 
-.services{
+.services {
   padding-top: 12%;
-  padding-bottom: 6% ;
+  padding-bottom: 6%;
 }
 
 /**** end services  ****/
@@ -605,7 +583,8 @@ hr {
 
 .parallax {
 
-  background-image: url("https://images.unsplash.com/photo-1470072508653-1be229b63562?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");  min-height: 500px; 
+  background-image: url("https://images.unsplash.com/photo-1470072508653-1be229b63562?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  min-height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -613,10 +592,139 @@ hr {
   background-color: rgba(0, 0, 0, 0.12);
 
 }
+
 .parallax h1 {
   padding-top: 100px;
   font-size: 70px;
 }
+
 .parallax h4 {
   font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** midle page content **/
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.main-title {
+  color: #2d2d2d;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0.7em 0;
+}
+
+.container1 {
+  float: right;
+  width: 50%;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    width: 33.33333%;
+  }
+}
+
+.container .title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+.content-image {
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p {
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom {
+  top: 80%;
 }
