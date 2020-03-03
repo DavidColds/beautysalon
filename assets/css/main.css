@@ -114,8 +114,6 @@ h6 {
 
 /*Bootstrap Carousel Responsive*/
 
-
-
 .drk:after {
   content: "";
   display: block;
@@ -190,19 +188,8 @@ h6 {
 
 }
 
+/* End Bootstrap Carousel Responsive*/
 
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-
-
-/** sections **/
-* {
-  box-sizing: border-box;
-}
 
 /* Create two equal columns that floats next to each other */
 .column {
@@ -284,20 +271,22 @@ footer .footer-right a {
   margin-left: 3px;
 }
 
-/** contact **/
+/** Maps **/
 
 .maps {
   max-width: 100%;
 }
+/** End Maps **/
+
+
+/** contact **/
 
 #contact {
   width: 100%;
   height: 50vh;
   background: #ee9ca7;
   background: -webkit-linear-gradient(to bottom, #ffdde1, #ee9ca7);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   overflow: hidden;
   padding-bottom: 200px;
   font-family: 'Playfair Display';
@@ -466,7 +455,7 @@ textarea {
 }
 
 .copyright {
-  font: 200 14px 'Oswald', sans-serif;
+  font: 200 14px 'Playfair Display', sans-serif;
   color: #555;
   letter-spacing: 1px;
   text-align: center;
@@ -477,7 +466,7 @@ hr {
   ;
 }
 
-/* Begin Media Queries*/
+/*  Media Queries*/
 @media screen and (max-width: 760px) {
   #contact {
     height: 1000px;
@@ -569,7 +558,7 @@ hr {
 
 }
 
-
+/*** end Contact
 /**** services  ****/
 
 .services {
@@ -603,18 +592,7 @@ hr {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-/** midle page content **/
+/** Products **/
 
 *,
 *:before,
@@ -728,3 +706,5 @@ hr {
 .fadeIn-bottom {
   top: 80%;
 }
+
+/** End Products **/
