@@ -6,6 +6,14 @@ html {
   margin: 0px;
   
 }
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 0;
+  margin-left: -15px;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Lora');
 
@@ -70,10 +78,11 @@ h6 {
   transition: all .5s ease-in-out;
   font-size: 30px;
   font-weight: 700;
+  background-color: #ffd7e1;
 }
 
 .fixed-top.scrolled {
-  background-color: rgba(255, 158, 150, 1.5) !important;
+  background-color: #ffd7e1 !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all .5s ease-in-out;
   font-size: 25px;
@@ -103,11 +112,6 @@ h6 {
   font-size: 60px;
   color: #fff2f5;
   font-weight: 300;
-}
-
-.intro h5 {
-  font-size: 40px;
-  color: #ffffff;
 }
 /** end intro-section **/
 
@@ -144,7 +148,7 @@ top:0;
 bottom:0;
 left:0;
 right:0;
-background: #ffd7e1;
+background: #ff99b349;
 opacity: 0.6;
 
 }
@@ -157,7 +161,10 @@ opacity: 0.6;
   display: block;
   
 }
-
+.carousel-item h1 {
+  margin: 0;
+  color: white;
+}
 .carousel-inner>.carousel-item>img {
   max-height: 1000px;
   object-fit: cover;
@@ -303,10 +310,14 @@ footer .footer-right a {
 
 /** contact **/
 
+.maps{
+  max-width: 100%;
+}
+
 #contact {
   width: 100%;
   height: 50vh;
-  background: #ee9ca7;  /* fallback for old browsers */
+  background: #ee9ca7;  
   background: -webkit-linear-gradient(to bottom, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     overflow: hidden;
