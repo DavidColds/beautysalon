@@ -53,6 +53,7 @@ h6 {
 
 /** navbar **/
 
+
 .navbar-light .navbar-nav .active>.nav-link {
   color: #000000;
   font-weight: 600px;
@@ -62,15 +63,14 @@ h6 {
 .navbar-brand {
   background-color: rgba(0, 0, 0, 0);
   transition: all .5s ease-in-out;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 700;
-
 }
 
 .fixed-top {
   background-color: rgba(0, 0, 0, 0);
   transition: all .5s ease-in-out;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   background-color: #ffd7e1;
 }
@@ -78,11 +78,15 @@ h6 {
 .fixed-top.scrolled {
   background-color: #ffd7e1 !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all .5s ease-in-out;
-  font-size: 25px;
-
-
+  font-size: 30px;
 }
+@media (min-width: 992px) {
+  .navbar {
+      height:50px;
+  }
+}
+
+
 
 /** navbar end **/
 
