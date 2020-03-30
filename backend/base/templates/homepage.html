@@ -1,3 +1,8 @@
+
+{% load bootstrap4 %}
+{% load staticfiles %}
+
+
 <!doctype html>
 <html lang="en">
 
@@ -13,7 +18,8 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Font Awesome-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
     <title>Beauty Salon</title>
 </head>
 
@@ -61,22 +67,28 @@
 
 <br>
 <hr>
-    <!-- Carousel-->
 
-        <section class="landing-page" id="landing-page">
-            <div class="text-wrapper">
-                <h1 class="run-faster">RUN FASTER</h1>
-                <P class="Landing-paragraph">Made for high speed running</P>
-                <div class="buttons">
-                    <button class="btn-shop-now" type="submit">Shop Now</button>
-                    <button class="btn-learn-more" type="submit">Learn More</button>
-                </div>
-            </div>
-            <div class="image-wrapper">
-                <img alt="background-image">
-            </div>   
-        </section>
-    <!-- end Carousel -->
+
+<div class="page-header header-filter" data-parallax="true" style="background-image: url('https://halsokraft.se/pub_images/original/ansiktsbehandling_1600x850.jpg')">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto">
+          <div class="brand text-center">
+            <h1>Your title here</h1>
+            <h3 class="title text-center">Subtitle</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="main main-raised">
+    <div class="container">
+      <div class="section text-center">
+        <h2 class="title">Your main section here</h2>
+      </div>
+    </div>
+  </div>
 
 
     <!-- Intro section -->
@@ -336,7 +348,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="{% static 'js/main.js'%}"></script>
 </body>
 
 </html>
