@@ -1,7 +1,5 @@
 {% load bootstrap4 %}
 {% load staticfiles %}
-
-
 <!doctype html>
 <html lang="en">
 
@@ -16,340 +14,431 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Font Awesome-->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
+
     <title>Beauty Salon</title>
 </head>
 
 <body>
-    <!-- Navbar-->
+    <!-- Navbar -->
 
-    <head>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
-            <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
-                <ul class="navbar-nav ml-auto text-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="mx-auto my-2 order-0 order-md-1 position-relative">
-                <a class="mx-auto" href="#">
-                    <img class="rounded-circle">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
-                <ul class="navbar-nav mr-auto text-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </head>
+    <div class="start">
+        <h1 class="text-center">Le Petit Salon</h1>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand d-lg-none" href="#">Le Petit Salon</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+            aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class=" collapse navbar-collapse justify-content-center" id="navbarToggle">
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hem</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Behandlingar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kontact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- End Navbar -->
 
     <br>
 
+    <!-- First Section/ Background -->
 
-    <div class="page-header header-filter" data-parallax="true">
+    <div class="page-header header" data-parallax="true">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 ml-auto mr-auto">
-                    <div class="brand text-center">
-                        <h1>Your title here</h1>
-                        <h3 class="title text-center">Subtitle</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="main main-raised">
-        <div class="container">
-
-            <div class="section text-center">
-                <div class="container-fluid">
-
-                    <br>
-                    <div class="row justify-content-md-center">
-                        <h1 style="color: black;">
-                            Wellcome to my website
-                        </h1>
-
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <h5 style="color: black;">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Veritatis consequuntur dignissimos, est quod adipisci autem qui
-                                exercitationem ducimus, velit sint alias nemo incidunt distinctio quasi totam, ab
-                                commodi error
-                                nulla?
-                            </h5>
-                        </div>
-                        <div class="col">
-                            <h5 style="color: black;">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Veritatis consequuntur dignissimos, est quod adipisci autem qui
-                                exercitationem ducimus, velit sint alias nemo incidunt distinctio quasi totam, ab
-                                commodi error
-                                nulla?
-                            </h5>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 
-
-    <!-- Intro section -->
-    <br>
-
-    <!-- End Intro section -->
+    <!-- End Background -->
 
 
-    <!-- Product section -->
-
-
+    <!-- Second Section/ About -->
+<div id="wrapper">
     <div class="container">
-        <div class="column">
-            <div class="lg-6">
-                <div class="content">
-                    <a href="#" target="_blank">
-                        <div class="content-overlay"></div>
-                        <img class="content-image"
-                            src="https://www.stylist.co.uk/images/app/uploads/2019/03/13094037/guide-to-ceramides-in-skincare-ingredient1-1600x1067.jpg?w=1640&h=1&fit=max&auto=format%2Ccompress">
-                        <div class="content-details fadeIn">
-                            <h3>This is a title</h3>
-                            <p>This is a short description</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="lg-6">
-                <div class="content">
-                    <a href="#" target="_blank">
-                        <div class="content-overlay"></div>
-                        <img class="content-image"
-                            src="https://www.stylist.co.uk/images/app/uploads/2019/03/13094037/guide-to-ceramides-in-skincare-ingredient1-1600x1067.jpg?w=1640&h=1&fit=max&auto=format%2Ccompress">
-                        <div class="content-details fadeIn">
-                            <h3>This is a title</h3>
-                            <p>This is a short description</p>
-                        </div>
-                    </a>
+        <div class="section-header">
+            <br>
+            <div class="row justify-content-md-center">
+                <h1 style="color: #ffbf00;">
+                    Välkommen till Le Petit
+                </h1>
+                <div class="session">
+                    <h3>
+                        “Le Petit Salon” den professionella hudvårdssalongen i Stockholm, välkomnar dig till en
+                        harmonisk miljö där vi tar hand om dig och din hud på bästa möjliga sätt.
+                        Här kan du vara trygg, koppla av och glömma bort vardagens stress.
+                        Vi erbjuder personliga behandlingar med produkter och tjänster av bästa kvalitet.
+                    </h3>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="container">
-        <div class="column">
-            <div class="lg-6">
-                <div class="content">
-                    <a href="#" target="_blank">
-                        <div class="content-overlay"></div>
-                        <img class="content-image"
-                            src="https://www.stylist.co.uk/images/app/uploads/2019/03/13094037/guide-to-ceramides-in-skincare-ingredient1-1600x1067.jpg?w=1640&h=1&fit=max&auto=format%2Ccompress">
-                        <div class="content-details fadeIn">
-                            <h3>This is a title</h3>
-                            <p>This is a short description</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
+        <div class="content">
+                <div class="grid">
 
-            <div class="lg-6">
-                <div class="content">
-                    <a href="#" target="_blank">
-                        <div class="content-overlay"></div>
-                        <img class="content-image"
-                            src="https://www.stylist.co.uk/images/app/uploads/2019/03/13094037/guide-to-ceramides-in-skincare-ingredient1-1600x1067.jpg?w=1640&h=1&fit=max&auto=format%2Ccompress">
-                        <div class="content-details fadeIn">
-                            <h3>This is a title</h3>
-                            <p>This is a short description</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
+                <figure class="effect-steve">
+                    <img src="https://images.unsplash.com/photo-1552511556-9f16dcb6561f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80"/>
+
+                    <figcaption>
+                        <h2>Behan <span>dlingar</span></h2>
+                        <p> </p>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+
+                <figure class="effect-steve">
+                    <img src="https://images.unsplash.com/photo-1552693673-1bf958298935?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80"/>
+                    <figcaption>
+                        <h2>Produ<span>kter</span></h2>
+                        <p> </p>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
         </div>
     </div>
+</div>
+
+</div>
+<br>
+<br> 
+<br>
+    <!-- End Second Section/ About -->
 
 
-    <!-- End Product section -->
 
-
-    <!--  services section -->
-
-    <br>
-
-    <section class="container">
-        <div class="row justify-content-md-center">
-            <h1 style="color: black;">
-                Sercices that I can offer
-            </h1>
-        </div>
-        <div class="row justify-content-md-center">
-            <h4 style="color: black;">Best tretments... Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Minima, autem accusantium tempore magnam quisquam dolorum ipsa aliquam, eius
-                dolore quas quis voluptatum voluptatem sed tempora ab ex porro, sint illo!</h4>
-        </div>
-    </section>
-
-    <!-- end services section -->
 
     <!-- Parallax -->
-
-    <div class="parallax-container">
+<div class="section">
         <div class="parallax">
-            <div class="row justify-content-md-center">
-                <h1>
+            <div class="text-center">
+                <h1 style="color:#ffe9a8;">
                     Offering Makeup and Hair Stylist Services
                 </h1>
             </div>
-            <div class="row justify-content-md-center">
-                <h4>
+            <div class="text-center">
+                <h4 style="color:#fff8e3;">
                     Ruxandra can offer and suggest any client a trial makeup session at least 3 months in
                 </h4>
             </div>
-            <div class="row justify-content-md-center">
-                <h4>
+            <div class="text-center">
+                <h4 style="color:#ffffff;">
                     advance of their wedding or special event.
                 </h4>
             </div>
         </div>
     </div>
-
     <!-- End Parallax -->
 
-    <!-- Contact-->
-    <section id="contact">
-        <h1 class="section-header">Contact</h1>
-        <div class="contact-wrapper">
-            <form class="form-horizontal" role="form" method="post">
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">
+<br>    
+<!-- Third Section/ photo gallery -->
+<div id="wrapper">
+    <div class="top-content">
+        <div class="container-fluid">
+            <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+                        <img src="https://images.unsplash.com/photo-1570174006382-148305ce4972?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            class="img-fluid mx-auto d-block" alt="img1">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="https://images.unsplash.com/photo-1485875437342-9b39470b3d95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80"
+                            class="img-fluid mx-auto d-block" alt="img2">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="https://images.unsplash.com/photo-1505944270255-72b8c68c6a70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            class="img-fluid mx-auto d-block" alt="img3">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            class="img-fluid mx-auto d-block" alt="img4">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="https://images.unsplash.com/photo-1552511556-9f16dcb6561f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80"
+                            class="img-fluid mx-auto d-block" alt="img5">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="https://images.unsplash.com/photo-1552693673-1bf958298935?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80"
+                            class="img-fluid mx-auto d-block" alt="img6">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="https://images.unsplash.com/photo-1573256049314-eb730189e0c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80"
+                            class="img-fluid mx-auto d-block" alt="img7">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="https://images.unsplash.com/photo-1485875437342-9b39470b3d95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80"
+                            class="img-fluid mx-auto d-block" alt="img8">
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
-                    </div>
-                </div>
-                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
-                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                    <div class="button">
-                        <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-                    </div>
-                </button>
-            </form>
-            <div class="direct-contact-container">
-                <ul class="contact-list">
-                    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Street |
-                                City</span></i></li>
-
-                    <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
-                                    href="tel:1-46-000-5555" title="Give me a call">(46) 000-5555</a></span></i></li>
-                    <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
-                                    href="mailto:#" title="Send me an email">emailme@gmail.com</a></span></i></li>
-                </ul>
-                <hr>
-                <ul class="social-media-list">
-                    <li><a href="#" target="_blank" class="contact-icon">
-                            <i class="fa fa-github" aria-hidden="true"></i></a>
-                    </li>
-                    <li><a href="#" target="_blank" class="contact-icon">
-                            <i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    </li>
-                    <li><a href="#" target="_blank" class="contact-icon">
-                            <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </li>
-                    <li><a href="#" target="_blank" class="contact-icon">
-                            <i class="fa fa-codepen" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
-                <hr>
+                <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
+        </div>
+    </div>
+</div>
+    <!-- End Third Section/ Photo gallery -->
+
+
+    <!-- Contact-->
+
+
+    <!--Section: Contact v.1-->
+    <section class="section pb-5">
+
+        <!--Section heading-->
+        <h1 class="section-header">Contact</h1>
+        <!--Section description-->
+        <h2 class="section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+            numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur
+            accusamus veniam.
+        </h2>
+
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-lg-5 mb-4">
+
+                <!--Form with header-->
+                <div class="card">
+
+                    <div class="card-body">
+                        <!--Header-->
+                        <div class="form-header  accent-1">
+                            <h3><i class="fas fa-envelope"></i> Write to us:</h3>
+                        </div>
+
+                        <p>We'll write rarely, but with only the best content.</p>
+                        <br>
+
+                        <!--Body-->
+                        <div class="md-form">
+                            <i class="fas fa-user prefix grey-text"></i>
+                            <input type="text" id="form-name" class="form-control">
+                            <label for="form-name">Your name</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <input type="text" id="form-email" class="form-control">
+                            <label for="form-email">Your email</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fas fa-tag prefix grey-text"></i>
+                            <input type="text" id="form-Subject" class="form-control">
+                            <label for="form-Subject">Subject</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fas fa-pencil-alt prefix grey-text"></i>
+                            <textarea id="form-text" class="md-textarea form-control" rows="3"></textarea>
+                            <label for="form-text">Textarea</label>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button class="btn btn-light waves-effect">Submit</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--Form with header-->
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-7">
+
+                <!--Google map-->
+
+                <iframe id="map-container-google-10" class="z-depth-1-half map-container-7"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d260534.52747512204!2d17.701880006374193!3d59.32584138311499!2m3!1f0!2f0!3f0!3m2!1i102
+                    4!2i768!4f13.1!3m3!1m2!1s0x465f763119640bcb%3A0xa80d27d3679d7766!2sStockholm!5e0!3m2!1sen!2sse!4v1583236719681!5m2!1sen!2sse" width="100%" height="550" frameborder="0"
+                    style="border:20;" allowfullscreen="">
+                </iframe>
+                <br>
+                <!--Buttons-->
+
+            </div>
+            <!--Grid column-->
+
         </div>
     </section>
+
     <br>
+    <!--Buttons-->
+    <div class="row text-center">
+        <div class="col-md-4">
+            <a class="btn-floating  accent-1"><i class="fas fa-map-marker-alt"></i></a>
+            <p>San Francisco, CA 94126</p>
+            <p>United States</p>
+        </div>
 
-    <!--  End Contact-->
+        <div class="col-md-4">
+            <a class="btn-floating  accent-1"><i class="fas fa-phone"></i></a>
+            <p>+ 01 234 567 89</p>
+            <p>Mon - Fri, 8:00-22:00</p>
+        </div>
 
-    <!-- Maps -->
-
-    <div class="maps">
-        <iframe class="maps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d260534.52747512204!2d17.701880006374193!3d59.32584138311499!2m3!1f0!2f0!3f0!3m2!1i102
-            4!2i768!4f13.1!3m3!1m2!1s0x465f763119640bcb%3A0xa80d27d3679d7766!2sStockholm!5e0!3m2!1sen!2sse!4v1583236719681!5m2!1sen!2sse"
-            width="100%" height="550" frameborder="0" style="border:20;" allowfullscreen="">
-        </iframe>
+        <div class="col-md-4">
+            <a class="btn-floating  accent-1"><i class="fas fa-envelope"></i></a>
+            <p>info@gmail.com</p>
+            <p>sale@gmail.com</p>
+        </div>
     </div>
-    <!--End Maps -->
 
+    </div>
+    <!--Grid column-->
+
+    </div>
+
+    </section>
+    <!--Section: Contact v.1-->
+
+
+
+
+
+
+    <footer class="page-footer font-small  pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Footer Content</h5>
+                    <p>Here you can use rows and columns to organize your footer content.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
     <!-- Footer -->
 
-    <footer>
-        <div class="footer-limiter">
-            <section id='about' class="py-5">
-                <section class="">
-                    <div class="row justify-content-md-center">
-                        <h1 style="color: black;">
-                            About Me
-                        </h1>
-                    </div>
-                    <div class="row justify-content-md-center">
-                        <h3 style="color: black;">Hi, I am... Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Minima, autem accusantium tempore magnam quisquam dolorum ipsa aliquam, eius
-                            dolore quas quis voluptatum voluptatem sed tempora ab ex porro, sint illo!</h3>
-                        </h5>
-                    </div>
-                </section>
-            </section>
-            <div class="footer-right">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-github"></i></a>
-            </div>
-            <div class="footer-left">
-                <p class="footer-links">Beauty Salon</p>
-                <p>Drughi David © 2020</p>
-            </div>
-        </div>
-    </footer>
-    <!-- End Footer -->
-
-
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js">
+    </script>
     <script type="text/javascript" src="{% static 'js/main.js'%}"></script>
+    <script>
+        [].slice.call( document.querySelectorAll('a[href="#"') ).forEach( function(el) {
+            el.addEventListener( 'click', function(ev) { ev.preventDefault(); } );
+        } );
+    </script>
 </body>
 
 </html>
