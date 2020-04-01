@@ -33,7 +33,7 @@ h6 {
   padding-bottom: 100px;
 }
 
-/** navbar **/
+/***********************************************************************************************navbar **/
 
 .navbar-light .nav-item .nav-link {
   color: rgba(0, 0, 0, 0.5);
@@ -43,12 +43,12 @@ h6 {
 }
 
 
-/** navbar end **/
+/***********************************************************************************************navbar end **/
 
 
 
 
-/* Landing page */
+/***********************************************************************************************Landing page */
 .page-header {
   height: 70vh;
   background-size: cover;
@@ -82,7 +82,7 @@ h6 {
 
 
 
-/*            Hover card*/
+/***********************************************************************************************Hover card*/
 .grid {
 	position: relative;
 	clear: both;
@@ -255,150 +255,133 @@ figure.effect-steve:hover p {
 
 
 
-/*                    End Hover card*/
+/************************************************************************************************End Hover card*/
 
 
 
 
 
 
-/* Carousel page*/
+/***********************************************************************************************Carousel page*/
 
-@media (min-width: 768px) and (max-width: 991px) {
-  /* Show 4th slide on md if col-md-4*/
-  .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
-      position: absolute;
-      top: 0;
-      right: -33.3333%;  /*change this with javascript in the future*/
-      z-index: -1;
-      display: block;
-      visibility: visible;
-  }
+
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
 }
-@media (min-width: 576px) and (max-width: 768px) {
-  /* Show 3rd slide on sm if col-sm-6*/
-  .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
-      position: absolute;
-      top: 0;
-      right: -50%;  /*change this with javascript in the future*/
-      z-index: -1;
-      display: block;
-      visibility: visible;
-  }
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
 }
-@media (min-width: 576px) {
-  .carousel-item {
-      margin-right: 0;
-  }
-  /* show 2 items */
-  .carousel-inner .active + .carousel-item {
-      display: block;
-  }
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
-      transition: none;
-  }
-  .carousel-inner .carousel-item-next {
-      position: relative;
-      transform: translate3d(0, 0, 0);
-  }
-  /* left or forward direction */
-  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
-  .carousel-item-next.carousel-item-left + .carousel-item,
-  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
-      position: relative;
-      transform: translate3d(-100%, 0, 0);
-      visibility: visible;
-  }
-  /* farthest right hidden item must be also positioned for animations */
-  .carousel-inner .carousel-item-prev.carousel-item-right {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      display: block;
-      visibility: visible;
-  }
-  /* right or prev direction */
-  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
-  .carousel-item-prev.carousel-item-right + .carousel-item,
-  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
-      position: relative;
-      transform: translate3d(100%, 0, 0);
-      visibility: visible;
-      display: block;
-      visibility: visible;
-  }
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
 }
-/* MD */
-@media (min-width: 768px) {
-  /* show 3rd of 3 item slide */
-  .carousel-inner .active + .carousel-item + .carousel-item {
-      display: block;
-  }
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
-      transition: none;
-  }
-  .carousel-inner .carousel-item-next {
-      position: relative;
-      transform: translate3d(0, 0, 0);
-  }
-  /* left or forward direction */
-  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
-      position: relative;
-      transform: translate3d(-100%, 0, 0);
-      visibility: visible;
-  }
-  /* right or prev direction */
-  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
-      position: relative;
-      transform: translate3d(100%, 0, 0);
-      visibility: visible;
-      display: block;
-      visibility: visible;
-  }
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
-/* LG */
-@media (min-width: 991px) {
-  /* show 4th item */
-  .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
-      display: block;
-  }
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
-      transition: none;
-  }
-  /* Show 5th slide on lg if col-lg-3 */
-  .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-      position: absolute;
-      top: 0;
-      right: -25%;  /*change this with javascript in the future*/
-      z-index: -1;
-      display: block;
-      visibility: visible;
-  }
-  /* left or forward direction */
-  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-      position: relative;
-      transform: translate3d(-100%, 0, 0);
-      visibility: visible;
-  }
-  /* right or prev direction //t - previous slide direction last item animation fix */
-  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-      position: relative;
-      transform: translate3d(100%, 0, 0);
-      visibility: visible;
-      display: block;
-      visibility: visible;
-  }
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
 }
-/* End Carousel page*/
 
 
 
 
 
 
-/* Footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************************************************************************End Carousel page*/
+
+
+
+
+
+
+/************************************************************************************************Footer */
 
 
 footer {
@@ -410,10 +393,10 @@ footer {
   padding: 45px 50px;
 }
 
-/* End Footer */
+/************************************************************************************************End Footer */
 
 
-/** Maps **/
+/*************************************************************************************************Maps **/
 
 .map-container-6{
   overflow:hidden;
@@ -434,20 +417,20 @@ footer {
   font-family: 'Playfair Display';
   color: #000000;
 }
-/** End Maps **/
+/************************************************************************************************End Maps **/
 
 
 
-/**** services  ****/
+/***********************************************************************************************services  ****/
 
 .services {
   padding-top: 12%;
   padding-bottom: 6%;
 }
 
-/**** end services  ****/
+/***********************************************************************************************end services  ****/
 
-/** parallax **/
+/*********************************************************************************************** parallax **/
 
 .parallax {
   background-image: url("https://images.unsplash.com/photo-1470072508653-1be229b63562?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
@@ -456,7 +439,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: rgba(144, 53, 53, 0.12);
 
 }
 
@@ -470,6 +453,7 @@ footer {
   color: #ffbf00;
 
 }
+/***********************************************************************************************end  parallax **/
 
 
 /** Products **/
