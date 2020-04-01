@@ -231,7 +231,6 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(144, 53, 53, 0.12);
-
 }
 
 .parallax h1 {
@@ -242,8 +241,28 @@ footer {
 .parallax h4 {
   font-size: 40px;
   color: #ffbf00;
-
 }
+
+
+.parallax2 {
+	background-image: url("https://images.pexels.com/photos/3673978/pexels-photo-3673978.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgba(144, 53, 53, 0.12);
+  }
+
+  .parallax2 h1 {
+	color: #ffbf00;
+	font-size: 70px;
+  }
+  
+  .parallax2 h4 {
+	font-size: 40px;
+	color: #ffbf00;
+  }
 /***********************************************************************************************end  parallax **/
 
 
