@@ -263,6 +263,31 @@ footer {
 	font-size: 40px;
 	color: #ffbf00;
   }
+
+  
+
+.parallax3 {
+	background-image: url("https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80");
+	min-height: 600px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgba(144, 53, 53, 0.12);
+  }
+
+  .parallax3 h1 {
+	color: #ffbf00;
+	font-size: 70px;
+  }
+  
+  .parallax3 h4 {
+	font-size: 40px;
+	color: #ffbf00;
+  }
+
+
+
 /***********************************************************************************************end  parallax **/
 
 
