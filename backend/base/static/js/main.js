@@ -17,4 +17,4 @@ $(function() {
 	  $("#image-modal").modal('hide')
 	});
   });
-  
+

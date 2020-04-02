@@ -50,7 +50,7 @@ h6 {
 
 /***********************************************************************************************Landing page */
 .page-header {
-  height: 70vh;
+  height: 90vh;
   background-size: cover;
   background-repeat: no-repeat;
   background: url(../img/landing.jpg);
@@ -71,7 +71,7 @@ h6 {
 .start h1{
   font-family: 'Parisienne', cursive;
   margin-top: 0;
-  font-size: 76px;
+  font-size: 66px;
   font-style: normal;
   text-transform: none;
   color: #ffbf00;
