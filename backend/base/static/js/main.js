@@ -1,12 +1,3 @@
-$(function () {
-    $(document).scroll(function () {
-        var $nav = $(".fixed-top");
-        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-      });
-  });
-  
-
-
 $(function() {     
 	$('a.thumbnail').click(function(e) {
 	  e.preventDefault();
@@ -18,3 +9,4 @@ $(function() {
 	});
   });
 
+document.addEventListener('touchstart', onTouchStart, {passive: true});
