@@ -276,6 +276,17 @@ footer {
 	background-color: rgba(144, 53, 53, 0.12);
   }
 
+  .parallax4 {
+    background-image: url("https://images.pexels.com/photos/2866796/pexels-photo-2866796.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(144, 53, 53, 0.12);
+    }
+
+
   .parallax3 h1 {
 	color: #ffbf00;
 	font-size: 70px;
