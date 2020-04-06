@@ -73,8 +73,12 @@ h6 {
   margin-top: 0;
   font-size: 66px;
   font-style: normal;
-  text-transform: none;
+  text-decoration: none!important;
   color: #ffbf00;
+}
+a:link{
+  text-decoration: none!important;
+  color: #000000;
 }
 
 /* End Landing page*/

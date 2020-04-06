@@ -107,30 +107,40 @@
                 <div class="col-lg-8 col-md-12 mb-4 ">
                     <div class="card-deck">
                         <div class="card">
-                            <img class="card-img-top"
-                                src="https://images.pexels.com/photos/3768926/pexels-photo-3768926.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                alt="Card image cap">
+                            <a href="{% url 'base-treatments' %}" target="blank">
+                                <img class="card-img-top"
+                                    src="https://images.pexels.com/photos/3768926/pexels-photo-3768926.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                    alt="Card image cap">
+                            </a>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">This is a longer card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
+                                <button type="button" class="btn btn-light">
+                                        <a href="{% url 'base-treatments' %}" target="blank">Behandlingar</a>
+                                </button>
+
                             </div>
                         </div>
                         <div class="card">
-                            <img class="card-img-top"
-                                src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                alt="Card image cap">
+                            <a href="{% url 'base-products' %}" target="blank">
+                                <img class="card-img-top"
+                                    src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                    alt="Card image cap">
+                            </a>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">This is a longer card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
+                                <button type="button" style="color: black;" class="btn btn-light">
+                                        <a href="{% url 'base-products' %}" target="blank">Producter</a>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 
 
@@ -147,7 +157,7 @@
         <div class="parallax">
             <div class="text-center">
                 <h1 style="color:#ffe9a8;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </h1>
             </div>
             <div class="text-center">
@@ -257,7 +267,7 @@
         <div class="parallax2">
             <div class="text-center">
                 <h1 style="color:#ffe9a8;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </h1>
             </div>
             <div class="text-center">
@@ -466,7 +476,7 @@
     </script>
 
     <script type="text/javascript" src="{% static 'js/main.js'%}"></script>
-    <script>
+    <script>  
         $('.navbar-nav>li>a').on('click', function () {
             $('.navbar-collapse').collapse('hide');
         });
