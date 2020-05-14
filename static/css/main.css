@@ -1,26 +1,44 @@
+/*
+============================================================= 
+Genereal css
+============================================================= 
+*/
+
 body,
 html {
-  font-family: 'Playfair Display';
-  background-color: #fafafa;
-  scroll-behavior: smooth;
-  padding: 0%;
-  margin: 0%;
+    font-family: 'Playfair Display', serif;
+    background-color: #fafafa;
+    scroll-behavior: smooth;
+    padding: 0%;
+    margin: 5px;
 }
 
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: '';
+}
 
-*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
-.clearfix:before, .clearfix:after { display: table; content: ''; }
-.clearfix:after { clear: both; }
+.clearfix:after {
+    clear: both;
+}
 
 .row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: 0;
-  margin-left: -15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: -15px;
 }
+
 p,
 h1,
 h2,
@@ -28,270 +46,169 @@ h3,
 h4,
 h5,
 h6 {
-  color: rgb(0, 0, 0);
-}
-
-#wrapper{
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-/***********************************************************************************************navbar **/
-
-.navbar-light .nav-item .nav-link {
-  color: rgba(0, 0, 0, 0.5);
-  padding: 1rem;
-  font-size: 25px;
-  font-family: 'Playfair Display';
+    color: rgb(0, 0, 0);
 }
 
 
-/***********************************************************************************************navbar end **/
-
-
-
-
-/***********************************************************************************************Landing page */
-.page-header {
-  height: 70vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background: url(../img/IMG_6908.JPG);
-  background-size: cover;
-  background-position: center center;
-  opacity: 1;
-  visibility: inherit;
-  z-index: 20;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  display: flex;
-  align-items: center;
-}
-
-
-
-.start h1{
-  margin-top: 0;
-  font-size: 66px;
-  font-style: normal;
-  text-decoration: none!important;
-  color: #ffbf00;
-}
-a:link{
-  text-decoration: none!important;
-  color: #000000;
-}
-
-/* End Landing page*/
-
-
-
-
-/***********************************************************************************************Hover card*/
-
-
-
-.card {
-  display: block;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-.card:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-
-/************************************************************************************************End Hover card*/
-
-
-
-
-
-
-/***********************************************************************************************Grid  Images*/
-
-
-
-.container {
-	max-width: 100rem;
-	margin: 0 auto;
-	padding: 0 2rem 2rem;
-}
-
-.gallery {
-	display: flex;
-	flex-wrap: wrap;
-	/* Compensate for excess margin on outer gallery flex items */
-	margin: -1rem -1rem;
-}
-
-.gallery-item {
-	/* Minimum width of 24rem and grow to fit available space */
-	flex: 1 0 24rem;
-	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
-	margin: 1rem;
-	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-	overflow: hidden;
-}
-
-.center-block {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
 /*
-
-The following rule will only run if your browser supports CSS grid.
-
-Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
-
+============================================================= 
+Navbar
+============================================================= 
 */
 
-@supports (display: grid) {
-	.gallery {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-gap: 10px;
-		background-color: rgba(255,0,0,.7);
-		height: 100%;
-		margin: 0;
-		padding: 0;
-	}
+.navbar-light .nav-item .nav-link {
+    color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    font-size: 25px;
+}
 
-	.gallery,
-	.gallery-item {
-	  color: white;
-	  text-transform: uppercase;
-	  font-size: 12px;
-	  background-color: rgba(0,0,0,.2);
-	  justify-content: center;
-	  align-items: center;
-	  display: flex;
-	  padding: 0;
-	  margin: 0;
-	}
+.wrapper-navbar {
+    background: white;
+    padding: 50px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 
+/*
+============================================================= 
+Landing Page
+============================================================= 
+*/
 
-/************************************************************************************************End Grid images*/
+.page-header {
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url(../img/IMG_6908.JPG);
+    background-size: cover;
+    background-position: center center;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+}
+
+.start h1 {
+    text-decoration: none!important;
+    color: #ffbf00;
+    line-height: 1.5;
+}
+
+a:link {
+    text-decoration: none!important;
+    color: #000000;
+}
+
+
+/*
+============================================================= 
+About
+============================================================= 
+*/
+
+.wrapper-about {
+    padding-top: 90px;
+}
+
+
+/*
+============================================================= 
+Card Hover
+============================================================= 
+*/
+
+.card {
+    display: block;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+/*
+============================================================= 
+Gallery
+============================================================= 
+*/
+
+.img-fluid {
+    padding: 10px;
+    width: 100%;
+}
 
 .card-img-top {
-	width: 100%;
-	height: 40vh;
-	object-fit: cover;
-	}
-
-
-
-
-/************************************************************************************************Footer */
-
-
-footer {
-  background-color: #e6e6e683;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  width: 100%;
-  text-align: left;
-  font-family: 'Playfair Display';
-  padding: 45px 50px;
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
 }
 
-/************************************************************************************************End Footer */
 
-
-/*************************************************************************************************Maps **/
-
-.map-container-6{
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
-  }
-  .map-container-6 iframe{
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
-  }
-
-
-.pb-5 h1{
-  font-family: 'Playfair Display';
-  color: #000000;
-}
-/************************************************************************************************End Maps **/
-
-
-
-/***********************************************************************************************services  ****/
-
-.services {
-  padding-top: 12%;
-  padding-bottom: 6%;
-}
-
-/***********************************************************************************************end services  ****/
-
-/*********************************************************************************************** parallax **/
+/*
+============================================================= 
+Parallax
+============================================================= 
+*/
 
 .parallax {
-  background-image: url(../img/paralax1.jpg);
-  min-height: 700px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(144, 53, 53, 0.12);
+    background-image: url(../img/paralax1.jpg);
+    min-height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(144, 53, 53, 0.12);
 }
 
 .parallax h1 {
-  color: #ffbf00;
-  font-size: 70px;
+    color: #ffbf00;
+    font-size: 70px;
 }
 
 .parallax h4 {
-  font-size: 40px;
-  color: #ffbf00;
+    font-size: 40px;
+    color: #ffbf00;
 }
 
-
 .parallax2 {
-	background-image: url(../img/paralax2.jpeg);
-	min-height: 500px;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: rgba(144, 53, 53, 0.12);
-  }
+    background-image: url(../img/paralax2.jpeg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(144, 53, 53, 0.12);
+}
 
-  .parallax2 h1 {
-	color: #ffbf00;
-	font-size: 70px;
-  }
-  
-  .parallax2 h4 {
-	font-size: 40px;
-	color: #ffbf00;
-  }
+.parallax2 h1 {
+    color: #ffbf00;
+    font-size: 70px;
+}
 
-  
+.parallax2 h4 {
+    font-size: 40px;
+    color: #ffbf00;
+}
 
 .parallax3 {
-	background-image: url("https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80");
-	min-height: 600px;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: rgba(144, 53, 53, 0.12);
-  }
+    background-image: url("https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80");
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(144, 53, 53, 0.12);
+}
 
-  .parallax4 {
+.parallax4 {
     background-image: url("https://images.pexels.com/photos/2866796/pexels-photo-2866796.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
     min-height: 600px;
     background-attachment: fixed;
@@ -299,28 +216,91 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(144, 53, 53, 0.12);
+}
+
+.parallax3 h1 {
+    color: #ffbf00;
+    font-size: 70px;
+}
+
+.parallax3 h4 {
+    font-size: 40px;
+    color: #ffbf00;
+}
+
+
+/*
+============================================================= 
+Treatments
+============================================================= 
+*/
+
+.border-top {
+    border-top-width: 2px !important;
+}
+
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+}
+
+.gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+@media (max-width: 450px) {
+    .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
     }
+}
+
+@media (max-width: 400px) {
+    .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+    }
+}
+
+button.close {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    padding-right: 1rem;
+    padding-top: .6rem;
+}
+
+.services {
+    padding-top: 12%;
+    padding-bottom: 6%;
+}
 
 
-  .parallax3 h1 {
-	color: #ffbf00;
-	font-size: 70px;
-  }
-  
-  .parallax3 h4 {
-	font-size: 40px;
-	color: #ffbf00;
-  }
+/*
+============================================================= 
+Footer
+============================================================= 
+*/
 
-
-
-/***********************************************************************************************end  parallax **/
-
-
-/** Products **/
-
-/** End Products **/
-
-
-
-
+footer {
+    background-color: #e6e6e683;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    width: 100%;
+    text-align: left;
+    padding: 45px 50px;
+}
