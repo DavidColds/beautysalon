@@ -196,19 +196,19 @@
             <div class="row">
                 <div class="col-md-9 mb-md-0 mb-5">
 
-                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
 
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="md-form mb-0">
                                     <input type="text" id="contact-name" class="form-control">
-                                    <label for="contact-name" name="name" class="">Namn</label>
+                                    <label for="contact-name" name="email" class="">Namn</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="md-form mb-0">
                                     <input type="text" id="contact-email" class="form-control">
-                                    <label for="contact-email" class="">Email</label>
+                                    <label for="contact-email" name="email" class="">Email</label>
                                 </div>
                             </div>
 
@@ -217,16 +217,16 @@
                             <div class="col-md-12">
                                 <div class="md-form">
                                     <textarea id="contact-message" class="form-control md-textarea" rows="3"></textarea>
-                                    <label for="contact-message">Meddelande</label>
+                                    <label for="contact-message" name="message">Meddelande</label>
                                 </div>
                             </div>
                         </div>
                     </form>
+                    <div data-netlify-recaptcha="true"></div>
+
+                    <input type="submit" value="Skicka">
 
 
-                    <div class="text-center text-md-left">
-                        <a class="btn btn-primary btn-md btn-rounded">Send</a>
-                    </div>
                 </div>
                 <div class="col-md-3 text-center">
                     <ul class="list-unstyled mb-0">
