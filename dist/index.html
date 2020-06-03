@@ -201,27 +201,34 @@
 
 
 
-
                     <form action="success.html" name="contact" method="POST" data-netlify="true">
-                        <p>
-                          <label>Your Name: <input type="text" name="name" /></label>   
-                        </p>
-                        <p>
-                          <label>Your Email: <input type="email" name="email" /></label>
-                        </p>
-                        <p>
-                          <label>Your Role: <select name="role[]" multiple>
-                            <option value="leader">Leader</option>
-                            <option value="follower">Follower</option>
-                          </select></label>
-                        </p>
-                        <p>
-                          <label>Message: <textarea name="message"></textarea></label>
-                        </p>
-                        <p>
-                          <button type="submit">Send</button>
-                        </p>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="md-form mb-0">
+                              <input type="text" name="name" class="form-control">
+                              <label for="contact-name" class="">Your name</label>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="md-form mb-0">
+                              <input type="email" id="contact-email" class="form-control">
+                              <label for="contact-email" class="">Your email</label>
+                            </div>
+                          </div>
+                        </div>
+              
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="md-form">
+                              <textarea name="message" class="form-control md-textarea" rows="3"></textarea>
+                              <label for="contact-message">Your message</label>
+                            </div>
+                          </div>
+                        </div>
+                        <button type="submit">Send</button>
+
                       </form>
+
 
 
 
