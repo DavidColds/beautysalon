@@ -202,35 +202,26 @@
 
 
 
-                    <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" name="name" class="form-control">
-                                    <label for="contact-name" name="email" class="">Namn</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="email" name="email" class="form-control">
-                                    <label for="contact-email" name="email" class="">Email</label>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form">
-                                    <textarea id="contact-message" class="form-control md-textarea" rows="3"></textarea>
-                                    <label for="contact-message" name="message">Meddelande</label>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <div data-netlify-recaptcha="true"></div>
-
-                    <input type="submit" value="Skicka">
+                    <form name="contact" method="POST" data-netlify="true">
+                        <p>
+                          <label>Your Name: <input type="text" name="name" /></label>   
+                        </p>
+                        <p>
+                          <label>Your Email: <input type="email" name="email" /></label>
+                        </p>
+                        <p>
+                          <label>Your Role: <select name="role[]" multiple>
+                            <option value="leader">Leader</option>
+                            <option value="follower">Follower</option>
+                          </select></label>
+                        </p>
+                        <p>
+                          <label>Message: <textarea name="message"></textarea></label>
+                        </p>
+                        <p>
+                          <button type="submit">Send</button>
+                        </p>
+                      </form>
 
 
 
