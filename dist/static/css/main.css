@@ -83,7 +83,7 @@ Landing Page
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background: url(../img/IMG_6908.JPG);
+    background: url(../img/landing.jpeg);
     background-size: cover;
     background-position: center center;
     opacity: 1;
@@ -302,4 +302,12 @@ footer {
     width: 100%;
     text-align: left;
     padding: 45px 50px;
+    
+}
+
+footer .copy{
+    background-color: rgb(206, 206, 206);
+}
+footer a{
+    color: #000;
 }
