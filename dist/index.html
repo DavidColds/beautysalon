@@ -4,8 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -13,9 +12,11 @@
     <!-- Font Family-->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <!--Animate css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--Aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Fancy box Cdn-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <!-- Local CSS-->
@@ -33,338 +34,576 @@
 
         gtag('config', 'UA-172035141-2');
     </script>
-
 </head>
 
-<body>
-    <div id="home"></div>
-    <!-- Navbar -->
-    <div class="wrapper-navbar fixed-top animate__animated animate__fadeInUp">
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <a class="navbar-brand d-lg-none" href="#home" style="color: #ffbf00;">Le Petit Salon</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
-                aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarToggle">
-                <ul class="navbar-nav">
-
-                    <li class="nav-item">
-                        <a class="nav-item nav-link" href="#home">Hem</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-item nav-link" href="treatments.html">Behandlingar</a>
-                    </li>
-
-                    <div class="start">
-                        <a class="link" href="#home">
-                            <h1 class="text-center" href="#home">Le Petit Salon</h1>
-                        </a>
-                    </div>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#bilder">Bilder</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Kontact">Kontakt</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <!-- End Navbar -->
-    <br>
-
-    <!-- First Section/ Background -->
-    <div class="page-header header animate__animated animate__fadeIn" data-parallax="true">
-        <div class="container">
-            <div class="row">
-            </div>
-        </div>
-    </div>
-    <!-- End Background -->
-
-    <!-- Second Section/ About -->
-
-    <section class="section section-lg heading-decorate ">
-        <div class="container">
-            <div class="row row-50 align-items-lg-center justify-content-xl-between">
-                <div data-aos="zoom-out-right overflow-x: hidden" class="col-lg-6 ">
-                    <div class="block-xs">
-                        <h2 class="heading-text">Varför bör vi vara ditt självklara val! <br><span
-                                class="divider"></span>
-                        </h2>
-                        <hr>
-                        <p class="big text-gray-800">Vi är en professionell hudvårdssalong i Stockholm, som välkomnar
-                            dig
-                            till en harmonisk miljö där vi tar hand om dig och din hud på bästa möjliga sätt</p>
-                        <p>Här kan du vara trygg, koppla av och glömma bort vardagens stress. Vi erbjuder personliga
-                            behandlingar med produkter och tjänster av bästa kvalitet.
-                        </p>
-                    </div>
-                </div>
-                <div data-aos="zoom-out-left overflow-x: hidden" class="col-md-6 mb-4 mb-md-0 ">
-                    <div class="view overlay z-depth-1-half">
-                        <img src="static/img/IMG_1228.jpeg" class="img-fluid" alt="">
-                        <a href="#">
-                            <div class="mask rgba-white-light"></div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- End Second Section/ About -->
-
-
-
-    <div id="bilder"></div>
-    <!-- Second Section/ Photo gallery -->
-
-    <section class="section section-lg bg-gray-100 text-center">
-        <div data-aos="zoom-in-down" class="container">
-
-            <div class="row">
-
-                <a href="./static/img/IMG_6908.JPG" id="grayscale" data-fancybox="gallery" class="col-md-4 column">
-                    <img src="./static/img/IMG_6908.JPG" class="img-fluid ">
-                </a>
-
-                <a href="./static/img/IMG_6903.JPG" id="grayscale" data-fancybox="gallery" class="col-md-4 column">
-                    <img src="./static/img/IMG_6903.JPG" class="img-fluid ">
-                </a>
-                <a href="./static/img/IMG_1071-1.JPEG" id="grayscale" data-fancybox="gallery" class="col-md-4 column">
-                    <img src="./static/img/IMG_1071-1.JPEG" class="img-fluid ">
-                </a>
-
-            </div>
-
-            <div class="row">
-
-
-
-                <a href="./static/img/IMG_6879.JPG" id="grayscale" data-fancybox="gallery" class="col-md-4 column">
-                    <img src="./static/img/IMG_6879.JPG" class="img-fluid ">
-                </a>
-                <a href="./static/img/pic1.jpeg" id="grayscale" data-fancybox="gallery" class="col-md-4 column">
-                    <img src="./static/img/pic1.jpeg" class="img-fluid ">
-                </a>
-                <a href="./static/img/IMG_1228.JPEG" id="grayscale" data-fancybox="gallery" class="col-md-4 column">
-                    <img src="./static/img/IMG_1228.JPEG" class="img-fluid ">
-                </a>
-
-            </div>
-        </div>
-        </div>
-    </section>
-    <!-- End Third Section/ Photo gallery -->
-
-
-
-    <!-- Owners -->
-    <section class="section section-lg heading-decorate">
-        <div class="container">
-            <div class="row row-50 align-items-lg-center justify-content-xl-between">
-                <div class="col-lg-6">
-                    <div class="block-xs" data-aos="fade-up">
-                        <h2 class="heading-text">Om Mig <br><span class="divider"></span>
-                        </h2>
-                        <hr>
-                        <p class="big text-gray-800">Jag heter Rucsandra och min intention är att erbjuda mina kunder en
-                            behaglig avslappnings- och återhämtningsstund i tillvaron.</p>
-
-                        <p>Jag är utbildad kosmetolog med flera års erfarenhet i branschen. Grundutbildningen gick jag
-                            på Kosmetikskolan för ansikts- och kroppsestetik. Under årens lopp har jag utvecklat och
-                            fördjupat mina kunskaper och kompetens genom olika kurser, bland annat Christine Valmy
-                            International School for Esthetics, Skin Care and Make-up; Kurs för massage och
-                            kroppsunderhåll och Microneedling Kurs.
-                            Med min kunskap, erfarenhet och kompetens vill jag bidra till att varje kund skall känna sig
-                            väl omhändertagen, ompysslad och sedd.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <div class="view overlay z-depth-1-half">
-                        <img src="static/img/pic2.jpeg" class="img-fluid" alt="">
-                        <a href="#">
-                            <div class="mask rgba-white-light"></div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div id="Kontact"></div>
-
-    <div data-aos="zoom-in" class="container my-5 py-5 z-depth-1">
-        <section class="text-center px-md-5 mx-md-5 dark-grey-text">
-            <h2 class="mbr-fonts-style mbr-section-title align-center display-3">Kontakta Oss</h2>
-            <hr>
-            <div class="row">
-                <div class="col-md-9 mb-md-0 mb-5">
-                    <form action="success.html" name="contact" method="POST" data-netlify="true">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" name="name" class="form-control"required>
-                                    <label for="contact-name" class="">Namn</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input input type="email" name="email" class="form-control"required>
-                                    <label for="contact-email" class="">Email</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-
-                            <div class="col-md-12">
-
-                                <div class="md-form mb-0">
-                                    <label class="col-md-0 control-label" for="Subject"></label>
-                                    <input id="contact-form-subject" name="Subject" type="text"
-                                        placeholder="Typ av Behandling" class="form-control input-md" required=""
-                                        autocomplete="off">
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form">
-                                    <textarea name="message" class="form-control md-textarea" rows="3"></textarea>
-                                    <label for="contact-message">Ditt meddelande</label>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-light">Skicka</button>
-
-                    </form>
-
-
-
-
-                </div>
-                <div class="col-md-3 text-center">
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="https://www.google.com/maps/dir//Furusundsgatan+19,+115+37+Stockholm/@
-                            59.320641,18.0145128,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x465f9d3610483091:0xe03a6f141c07f7ab!2m2!1d18.1008912!2d59.3464879"
-                                target="blank">
-                                <i class="fas fa-map-marker-alt fa-2x blue-text"></i>
-                                <p>Furusundsgatan 19 11537 Stockholm </p>
-
+<body class="intro-page spa-lp mask rgba-purple-slight">
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#home"><strong>LePetitSalon</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                    <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Hem <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bilder">Bilder</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontakt">Kontakt</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Behandlingar
                             </a>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone fa-2x mt-4 blue-text"></i>
-                            <p>+46 769 262 633</p>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope fa-2x mt-4 blue-text"></i>
-                            <p class="mb-0">rucsandra.hudterapeut@gmail.com</p>
+                            <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                                <a class="dropdown-item" href="Ansiktsbehandling.html">Ansiktsbehandling</a>
+                                <a class="dropdown-item" href="Cellulitbehandling.html">Cellulitbehandling</a>
+                                <a class="dropdown-item" href="Fotvård.html">Fotvård</a>
+                                <a class="dropdown-item" href="Vaxning.html">Vaxning</a>
+                                <a class="dropdown-item" href="Fransar.html">Fransar</a>
+                            </div>
                         </li>
                     </ul>
+
                 </div>
+            </div>
+        </nav>
+
+        <!-- Intro Section -->
+        <!-- Full Page Intro -->
+        <div class="view"
+            style="background-image: url('/static/img/landing.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+                <!-- Content -->
+                <div class="container-fluid">
+                    <!--Grid row-->
+                    <div class="row mask rgba-purple-slight">
+                        <div class="col-md-6 col-xl-5 mt-xl-5 wow fadeInRight" data-wow-delay="0.3s">
+                        </div>
+                        <div class="col-md-10 white-text text-center text-md-right mt-xl-5 mb-5 wow fadeInLeft"
+                            data-wow-delay="0.3s">
+                            <div class="wow fadeInDown" data-wow-delay="0.2s">
+                                <h3 class="display-3 font-weight-bold mb-2" style="color:rgb(255, 199, 126)">LePetit Salon</h3>
+                                <hr class="hr-light">
+                                <h4 class="subtext-header mt-4 mb-3" style="color:rgb(255, 199, 126)">Din professionella hudvårdssalong i Stockholm</h4>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </div>
+                <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
+        </div>
+    </header>
+
+    <main>
+
+        <!--First container-->
+        <div class=" container-fluid">
+
+            <div class="container">
+
+                <!--Section: About-->
+                <section id="about" class="about mt-4 mb-3">
+
+                    <!--Secion heading-->
+                    <h2 class="text-center mb-5 my-5 py-4 dark-grey-text font-weight-bold wow fadeIn"
+                        data-wow-delay="0.2s">
+                        Om LePetitSalon</h2>
+
+                    <!--First row-->
+                    <div class="row">
+
+                        <!--First column-->
+                        <div class="col-lg-5 col-md-12 mb-5 wow fadeIn" data-wow-delay="0.4s">
+
+                            <!--Image-->
+                            <img src="./static/img/IMG_1228.jpeg" class="img-fluid z-depth-1 rounded" alt="My photo">
+
+                        </div>
+                        <!--/First column-->
+
+                        <!--Second column-->
+                        <div class="col-lg-6 ml-lg-auto col-md-12 wow fadeIn" data-wow-delay="0.4s">
+
+                            <!--Title-->
+                            <h4 class="grey-text-2 mb-4">Varför bör vi vara ditt självklara val!</h4>
+
+                            <!--Description-->
+                            <p class="grey-text-2" align="justify">Vi är en professionell hudvårdssalong i Stockholm,
+                                som
+                                välkomnar dig till en harmonisk miljö där vi tar hand om dig och din hud på bästa
+                                möjliga
+                                sätt
+
+                                Här kan du vara trygg, koppla av och glömma bort vardagens stress. Vi erbjuder
+                                personliga
+                                behandlingar med produkter och tjänster av bästa kvalitet.</p>
+                            <a class="btn btn-rounded deep-blue-gradient
+                            " href="#kontakt">Kontakta Oss</a>
+
+                        </div>
+                        <!--/Second column-->
+
+                    </div>
+                    <!--/First row-->
+
+                </section>
+                <!--/Section: About-->
+            </div>
+        </div>
+
+
+
+        <div id="bilder"></div>
+        <!-- Second Section/ Photo gallery -->
+
+        <section class="section section-lg text-center">
+            <div class="container wow fadeIn" data-wow-delay="0.2s">
+
+                <div class="row">
+
+                    <a href="./static/img/IMG_6908.JPG" id="grayscale" data-fancybox="gallery" class="col-md-4 column">
+                        <img src="./static/img/IMG_6908.JPG" class="img-fluid ">
+                    </a>
+
+                    <a href="./static/img/IMG_6903.JPG" id="grayscale" data-fancybox="gallery" class="col-md-4 column">
+                        <img src="./static/img/IMG_6903.JPG" class="img-fluid ">
+                    </a>
+                    <a href="./static/img/IMG_1071-1.JPEG" id="grayscale" data-fancybox="gallery"
+                        class="col-md-4 column">
+                        <img src="./static/img/IMG_1071-1.JPEG" class="img-fluid ">
+                    </a>
+
+                </div>
+
+                <div class="row">
+
+
+
+                    <a href="./static/img/IMG_6879.JPG" id="grayscale" data-fancybox="gallery" class="col-md-4 column">
+                        <img src="./static/img/IMG_6879.JPG" class="img-fluid ">
+                    </a>
+                    <a href="./static/img/pic1.jpeg" id="grayscale" data-fancybox="gallery" class="col-md-4 column">
+                        <img src="./static/img/pic1.jpeg" class="img-fluid ">
+                    </a>
+                    <a href="./static/img/IMG_1228.JPEG" id="grayscale" data-fancybox="gallery" class="col-md-4 column">
+                        <img src="./static/img/IMG_1228.JPEG" class="img-fluid ">
+                    </a>
+
+                </div>
+            </div>
             </div>
         </section>
-    </div>
-
-    <br>
 
 
-    <!-- Footer -->
-    <footer data-aos="fade-up" data-aos="zoom-in" class="page-footer nique-color">
-        <!-- Footer Links -->
-        <div class="container text-center text-md-left mt-5">
 
-            <!-- Grid row -->
-            <div class="row mt-3">
+        <div class="container-fluid bg-gray-100 my-5" style="padding: 50px">
 
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <div class="container bg-gray-100 my-5">
+                <section class="text-center dark-grey-text">
+                    <div class="row">
 
-                    <!-- Content -->
-                    <h5 class="text-uppercase font-weight-bold">Le Petit Salon</h5>
-                    <p>Du får en personlig behandling som är anpassad för just din hud och dina önskemål. Behandlingen
-                        inkluderar rengöring,hudanalys,ånga,peeling
-                        porrengöring,dekolletage och ansiktsmassage,ansiktsmask,
-                        skalpmassage,ögoncreme,serum
-                        och dagcreme samt en brynplockning.</p>
+                        <!-- Grid column -->
+                        <div class="col-lg-4 col-md-12 mb-4">
 
-                </div>
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Card -->
+                            <div class="card">
 
-                    <h6 class="text-uppercase font-weight-bold">Sociala Medier:</h6>
-                    <br>
-                    <!-- Facebook -->
-                    <a href="https://www.facebook.com/profile.php?id=100006789589385">
-                        <i class="fab fa-facebook-f fa-lg  blue-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <!--Instagram-->
-                    <a href="https://www.instagram.com/rucsandras.lepetitsalon/?hl=en">
-                        <i class="fab fa-instagram fa-lg blue-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
+                                <!-- Content -->
+                                <div class="card-body">
+
+                                    <!-- Offer -->
+                                    <h5 class="mb-4">Ansiktsbehandling Relax</h5>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="card-circle d-flex justify-content-center align-items-center">
+                                        </div>
+                                    </div>
+
+                                    <!-- Price -->
+                                    <h2 class="font-weight-bold my-4">650 Sek</h2>
+                                    <p class="dark-text">En mycket härligt, avslappnande och vårdande behandling som
+                                        passar alla hudtyper.
+                                        Rengöring, peeling ingår (inte porrengöring), ansiktsmassage(dekolltage, nacke)
+                                        mask, avslutande med dagkräm.
+                                    </p>
+                                    <a class="btn peach-gradient btn-rounded" href="Ansiktsbehandling.html">Läs mer och
+                                        boka!</a>
+
+                                </div>
+                                <!-- Content -->
+
+                            </div>
+                            <!-- Card -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+
+                            <!-- Card -->
+                            <div class="card purple-gradient">
+
+                                <!-- Content -->
+                                <div class="card-body white-text">
+
+                                    <!-- Offer -->
+                                    <h5 class="mb-4">Microneedling</h5>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="card-circle d-flex justify-content-center align-items-center">
+                                        </div>
+                                    </div>
+
+                                    <!--Price -->
+                                    <h2 class="font-weight-bold my-4">1400 Sek</h2>
+                                    <p>Ingår LED mask vid önskemål. För denna behandling kan man mixa olika serum i en
+                                        cocktail som är speciellt anpassat till dina behov, i samråd med hudterapeutens
+                                        åsikt
+                                        och värdering, samt kundens önskemål.
+
+                                        .</p>
+                                    <a class="btn btn-outline-white btn-rounded" href="Ansiktsbehandling.html">Läs mer
+                                        och boka!</a>
+
+                                </div>
+                                <!-- Content -->
+
+                            </div>
+                            <!-- Card -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+
+                            <!-- Card -->
+                            <div class="card">
+
+                                <!-- Content -->
+                                <div class="card-body">
+
+                                    <!-- Offer -->
+                                    <h5 class="mb-4">Klassisk ansiktsbehandling</h5>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="card-circle d-flex justify-content-center align-items-center">
+                                        </div>
+                                    </div>
+
+                                    <!--Price -->
+                                    <h2 class="font-weight-bold my-4">850 Sek</h2>
+                                    <p class="dark-text">Djuprengörande ansiktsbehandling .
+                                        I behandlingen ingår rengöring,ånga, portömning,peeling, aktiv ampull med olika
+                                        serum
+                                        (vitaminer,kollagen hyaluronsyra m.m)
+                                    </p>
+                                    <a class="btn aqua-gradient btn-rounded" href="Ansiktsbehandling.html">Läs mer och
+                                        boka!</a>
+
+                                </div>
+                                <!-- Content -->
+
+                            </div>
+                            <!-- Card -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                </section>
+                <!--Section: Content-->
 
 
-                </div>
             </div>
         </div>
 
-        <div class=" text-center copy">© 2020 Copyright:
-            <a href="https://www.itnordik.se/" target="blank">ITNordik</a>
+        <!-- Owners -->
+        <div class="container py-5 my-5">
+            <section class="p-md-3 mx-md-5 text-center text-lg-left">
+                <h2 class="text-center font-weight-bold mb-4 pb-1">Vårt Team!</h2>
+                <div class="row">
+                    <div class="col-lg-6 mb-6">
+                        <div class="card">
+                            <div class="avatar w-100 white d-flex justify-content-center align-items-center">
+                                <img src="/static/img/pic2.jpeg" class="img-fluid" />
+                            </div>
+                            <div class="card-body">
+                                <p class="font-weight-bold my-2">Rucsandra </p>
+                                <p class="text-muted">Hudterapeut</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-6">
+                        <div class="card">
+                            <div class="avatar w-100 white d-flex justify-content-center align-items-center">
+                                <img src="/static/img/0.jpg" class="img-fluid" />
+                            </div>
+                            <div class="card-body">
+                                <p class="font-weight-bold my-2">Sadaf</p>
+                                <p class="text-muted">Franstylist</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </footer>
+
+        <div id="kontakt"></div>
+
+        <div data-aos="zoom-in" class="container my-5 py-5 z-depth-1">
+            <section class="text-center px-md-5 mx-md-5 dark-grey-text">
+                <h2 class="mbr-fonts-style mbr-section-title align-center display-3">Kontakta Oss</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-9 mb-md-0 mb-5">
+                        <form action="success.html" name="contact" method="POST" data-netlify="true">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" name="name" class="form-control" required>
+                                        <label for="contact-name" class="">Namn</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input input type="email" name="email" class="form-control" required>
+                                        <label for="contact-email" class="">Email</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <div class="md-form mb-0">
+                                        <label class="col-md-0 control-label" for="Subject"></label>
+                                        <input id="contact-form-subject" name="Subject" type="text"
+                                            placeholder="Typ av Behandling" class="form-control input-md" required=""
+                                            autocomplete="off">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form">
+                                        <textarea name="message" class="form-control md-textarea" rows="3"></textarea>
+                                        <label for="contact-message">Ditt meddelande</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-light">Skicka</button>
+
+                        </form>
 
 
 
 
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="https://www.google.com/maps/dir//Furusundsgatan+19,+115+37+Stockholm/@
+                            59.320641,18.0145128,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x465f9d3610483091:0xe03a6f141c07f7ab!2m2!1d18.1008912!2d59.3464879"
+                                    target="blank">
+                                    <i class="fas fa-map-marker-alt fa-2x blue-text"></i>
+                                    <p>Furusundsgatan 19 11537 Stockholm </p>
+
+                                </a>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone fa-2x mt-4 blue-text"></i>
+                                <p>+46 769 262 633</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope fa-2x mt-4 blue-text"></i>
+                                <p class="mb-0">rucsandra.hudterapeut@gmail.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!--Footer-->
+        <footer class="page-footer deep-purple lighten-2 text-center text-md-left pt-0">
+
+            <!--Footer Links-->
+            <div class="container">
+
+                <!--Grid row-->
+                <div class="row pt-5 mb-3 text-center d-flex justify-content-center">
+
+                    <!--Grid column-->
+                    <div class="col-md-2 mb-3">
+                        <h6 class="text-uppercase font-weight-bold"><a href="index.html#about">Om oss</a></h6>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-md-2 mb-3">
+                        <h6 class="text-uppercase font-weight-bold"><a
+                                href="Ansiktsbehandling.html">Ansiktsbehandling</a></h6>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-2 mb-3">
+                        <h6 class="text-uppercase font-weight-bold"><a
+                                href="Cellulitbehandling.html">Cellulitbehandling</a></h6>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-2 mb-3">
+                        <h6 class="text-uppercase font-weight-bold"><a href="Fotvård.html">Fotvård</a></h6>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-2 mb-3">
+                        <h6 class="text-uppercase font-weight-bold"><a href="Vaxning.html">Vaxning</a></h6>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <h6 class="text-uppercase font-weight-bold"><a href="Fransar.html">Fransar</a></h6>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <hr class="rgba-white-light" style="margin: 0 15%;">
+
+                <!--Grid row-->
+                <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+                    <!--Grid column-->
+                    <div class="col-md-8 col-12 mt-5">
+                        <p style="line-height: 1.7rem">Du får en personlig behandling som är anpassad för just din hud
+                            och dina önskemål.
+                            Behandlingen
+                            inkluderar rengöring,hudanalys,ånga,peeling
+                            porrengöring,dekolletage och ansiktsmassage,ansiktsmask,
+                            skalpmassage,ögoncreme,serum
+                            och dagcreme samt en brynplockning.</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+
+                <!--Grid row-->
+                <div class="row pb-3">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="footer-socials mb-5 flex-center">
+                            <!--Facebook-->
+                            <a class="p-2 m-2 fa-lg fb-ic"
+                                href="https://www.facebook.com/profile.php?id=100006789589385" target="blank">
+                                <i class="fab fa-facebook-f fa-lg white-text mr-md-4"> </i></a>
+
+                            <a class="p-2 m-2 fa-lg ins-ic"
+                                href="https://www.instagram.com/rucsandras.lepetitsalon/?hl=en" target="blank">
+                                <i class="fab fa-instagram fa-lg white-text mr-md-4"> </i></a>
+
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+
+            </div>
+            <!--/Footer Links-->
+
+            <!--Copyright-->
+            <div class="footer-copyright py-3 text-center">
+                <div class="container-fluid">
+                    © 2020 Copyright: <a href="https://www.itnordik.se/" target="blank"> ITnordik </a>
+                </div>
+            </div>
+            <!--/Copyright-->
+
+        </footer>
+        <!--/Footer-->
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
 
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
+        <!-- Fancy box Cdn-->
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+        <!--Aos-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Fancy box Cdn-->
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+        </script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js">
+        </script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"> </script>
 
-    <!--Aos-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script type="text/javascript" src="static/js/main.js"></script>
+        <script>
+            //Animation init
+            new WOW().init();
 
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
-    </script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js">
-    </script>
-
-
-    <script type="text/javascript" src="static/js/main.js"></script>
-    <script>
-        $('.navbar-nav>li>a').on('click', function () {
-            $('.navbar-collapse').collapse('hide');
-        });
-    </script>
-    <script>
-        AOS.init();
-    </script>
+            // Material Select Initialization
+            $(document).ready(function () {
+                $('.mdb-select').material_select();
+            });
+        </script>
+        <script>
+            $('body').on('mouseenter mouseleave', '.nav-item', function (e) {
+                if ($(window).width() > 750) {
+                    var _d = $(e.target).closest('.nav-item');
+                    _d.addClass('show');
+                    setTimeout(function () {
+                        _d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
+                    }, 1);
+                }
+            });
+        </script>
+        <script>
+            AOS.init();
+        </script>
+        <script>
+            $('.jarallax').jarallax({
+                speed: 0.2
+            });
+        </script>
 </body>
 
 </html>

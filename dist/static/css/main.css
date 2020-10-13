@@ -3,11 +3,47 @@
 Genereal css
 ============================================================= 
 */
-
-.treatments-bg {
-    color: #000;
+html,
+body,
+header,
+.view {
+  height: 100%;
 }
 
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 600px;
+  }
+}
+
+.btn .fa {
+  margin-left: 3px;
+}
+
+.top-nav-collapse {
+  background-color: #424f95 !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+ .navbar:not(.top-nav-collapse) {
+  background: #424f95 !important;
+ }
+}
 body,
 html {
     font-family: 'Playfair Display', serif;
@@ -54,24 +90,31 @@ h6 {
 }
 
 
+.hero {
+    padding: 20vh 0;
+    background: -webkit-gradient(linear, left top, right top, from(#EECDA3), to(#EF629F));
+    background: linear-gradient(to right, #EECDA3, #EF629F);
+  }
+   
 /*
-============================================================= 
-Navbar
-============================================================= 
+=============================================================
+navbar
+============================================================
 */
 
-.navbar-light .nav-item .nav-link {
-    color: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
-    font-size: 25px;
+.top-nav-collapse {
+    background-color: #f8bbd0 !important;
 }
 
-.wrapper-navbar {
-    background: white;
-    margin: 0 auto;
-    text-align: center;
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
 }
 
+@media (max-width: 991px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #f8bbd0 !important;
+    }
+}
 
 /*
 ============================================================= 
@@ -80,7 +123,7 @@ Landing Page
 */
 
 .page-header {
-    height: 100vh;
+    height: 50vh;
     background-size: cover;
     background-repeat: no-repeat;
     background: url(../img/landing.jpeg);
@@ -192,84 +235,6 @@ Gallery
     padding: 115px 0;
 }
 
-
-/*
-============================================================= 
-Parallax
-============================================================= 
-*/
-
-.parallax {
-    background-image: url(../img/paralax1.jpg);
-    min-height: 700px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(144, 53, 53, 0.12);
-}
-
-.parallax h1 {
-    color: #ffbf00;
-    font-size: 70px;
-}
-
-.parallax h4 {
-    font-size: 40px;
-    color: #ffbf00;
-}
-
-.parallax2 {
-    background-image: url(../img/paralax2.jpeg);
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(144, 53, 53, 0.12);
-}
-
-.parallax2 h1 {
-    color: #ffbf00;
-    font-size: 70px;
-}
-
-.parallax2 h4 {
-    font-size: 40px;
-    color: #ffbf00;
-}
-
-.parallax3 {
-    background-image: url("https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80");
-    min-height: 600px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(144, 53, 53, 0.12);
-}
-
-.parallax4 {
-    background-image: url("https://images.pexels.com/photos/2866796/pexels-photo-2866796.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-    min-height: 600px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(144, 53, 53, 0.12);
-}
-
-.parallax3 h1 {
-    color: #ffbf00;
-    font-size: 70px;
-}
-
-.parallax3 h4 {
-    font-size: 40px;
-    color: #ffbf00;
-}
-
-
 /*
 ============================================================= 
 Treatments
@@ -289,25 +254,11 @@ Treatments
     padding: 30px;
 }
 
-
+.fransar{
+    font-weight: 600;
+}
 /*
 ============================================================= 
 Footer
 ============================================================= 
 */
-
-footer {
-    background-color: #e6e6e683;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    width: 100%;
-    text-align: left;
-    padding: 45px 50px;
-    
-}
-
-footer .copy{
-    background-color: rgb(206, 206, 206);
-}
-footer a{
-    color: #000;
-}

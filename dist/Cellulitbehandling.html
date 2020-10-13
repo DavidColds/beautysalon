@@ -4,8 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -13,80 +12,100 @@
     <!-- Font Family-->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <!--Animate css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-    <!--Aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Fancy box Cdn-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Local CSS-->
     <link rel="stylesheet" href="static/css/main.css" type="text/css">
-    <title>Beauty Salon</title>
+    <title>LePetitSalon</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172035141-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-172035141-2');
+    </script>
 </head>
 
 <body>
-    <div id="home"></div>
-    <!-- Navbar -->
-    <div class="wrapper-navbar fixed-top animate__animated animate__fadeInUp">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar">
-            <div class="container">
-                <a class="navbar-brand" href="index.html#home"><strong>LePetitSalon</strong></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
-                    <ul class="nav navbar-nav nav-flex-icons ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#home">Hem <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#bilder">Bilder</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#kontakt">Kontakt</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Behandlingar
-                            </a>
-                            <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
-                                <a class="dropdown-item" href="Ansiktsbehandling.html">Ansiktsbehandling</a>
-                                <a class="dropdown-item" href="Cellulitbehandling.html">Cellulitbehandling</a>
-                                <a class="dropdown-item" href="Fotvård.html">Fotvård</a>
-                                <a class="dropdown-item" href="Vaxning.html">Vaxning</a>
-                                <a class="dropdown-item" href="Fransar.html">Fransar</a>
-                            </div>
-                        </li>
-                    </ul>
-    
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html#home"><strong>LePetitSalon</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home">Hem <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#bilder">Bilder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#kontakt">Kontakt</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Behandlingar
+                        </a>
+                        <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                            <a class="dropdown-item" href="Ansiktsbehandling.html">Ansiktsbehandling</a>
+                            <a class="dropdown-item" href="Cellulitbehandling.html">Cellulitbehandling</a>
+                            <a class="dropdown-item" href="Fotvård.html">Fotvård</a>
+                            <a class="dropdown-item" href="Vaxning.html">Vaxning</a>
+                            <a class="dropdown-item" href="Fransar.html">Fransar</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="display-3">Cellulitbehandling Priser</h1>
                 </div>
             </div>
-        </nav>
-    </div>
-    <!-- End Navbar -->
-    <br>
-
-
-
-
-    <div class="jumbotron text-center">
-        <div class="fa-6x">
-
-            <i class="fas fa-heart" style="color:#ffbf00"></i>
-
         </div>
-        <h1 class="display-3">Tack s&aring; mycket!</h1>
-        <p class="lead"><strong>Vi har tagit emot ditt mejl!</p>
-        <hr>
-        <p>
-            <p>vi &aring;terkommer snart!</p>
-        </p>
+    </section>
+
+    <div class="container py-5 my-5">
+        <section class="p-md-5 mx-md-5"
+            style="background-image: url(https://mdbootstrap.com/img/Photos/Others/background2.jpg);">
+            <h2 class="text-center mx-auto font-weight-bold mb-4 pb-2 white-text"></h2>
+            <div class="row m-1">
+                <div class="col mb-1 mt-2 p-2">
+                    <div class="card">
+                        <div class="card-header white">
+                            <h4 class="h4 my-2">Cellulitbehandling
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="h2"><strong>600  Sek</strong></h2>
+                            <p><strong>Behandlingen innebär en inpackning med fettförbränning lösning, därefter ligger man i en hög värme tecken i 40-45 min. Detta avslutas med en djup cellulit massage. Perfekt för dem som besvarar av cellulit eller för dig som vill helt enkelt göra en ordentlig hellkrops detox. Dessutom har denna behandling egenskapen att förbättra lymf- och blodcirkulationen som gör den perfekt för dem som har lätt att samla på sig vätska.
+
+
+                            </strong></p>
+                        </div>
+                        <div class="card-footer white d-flex justify-content-center">
+                            <button class="mb-3 mt-3 btn purple-gradient btn-rounded">Boka!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-
-
-
-
 
         <!--Footer-->
         <footer class="page-footer deep-purple lighten-2 text-center text-md-left pt-0">
@@ -193,46 +212,57 @@
         </footer>
         <!--/Footer-->
 
-
-
-
-
-    <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+
     <!-- Fancy box Cdn-->
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
     <!--Aos-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
     </script>
+
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js">
     </script>
-
-
-    <!-- Fancy box Cdn-->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"> </script>
 
     <script type="text/javascript" src="static/js/main.js"></script>
     <script>
-        $('.navbar-nav>li>a').on('click', function () {
-            $('.navbar-collapse').collapse('hide');
+        //Animation init
+        new WOW().init();
+
+        // Material Select Initialization
+        $(document).ready(function () {
+            $('.mdb-select').material_select();
         });
     </script>
     <script>
-        AOS.init();
+        $('body').on('mouseenter mouseleave', '.nav-item', function (e) {
+            if ($(window).width() > 750) {
+                var _d = $(e.target).closest('.nav-item');
+                _d.addClass('show');
+                setTimeout(function () {
+                    _d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
+                }, 1);
+            }
+        });
     </script>
+
 </body>
 
 </html>
